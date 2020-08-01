@@ -48,11 +48,26 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. Explain the difference between `Relational Databases` and `SQL`.
 
+ANSWER:
+Structured Query Language is the standard language used to manage databases and the data within them. 
+It is the de facto way to interact with a database.
+
+Relational Databases are databases that their data store in tables with rows and column, each table has a uniquely primary key and tables are related using foreign keys.
+
 2. Why do tables need a `primary key`?
+
+ANSWER:
+The column or columns defined as the primary key ensure uniqueness in the table; no two rows can have the same key. The primary key of one table may also help to identify records in other tables, and be part of the second table’s primary key. 
 
 3. What is the name given to a table column that references the primary key on another table.
 
+ANSWER:
+Foreign key
+
 4. What do we need in order to have a _many to many_ relationship between two tables.
+
+ANSWER:
+Use bridge tables to change a many to many relationship to one to many relationships.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
