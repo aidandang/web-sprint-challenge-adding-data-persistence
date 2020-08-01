@@ -9,6 +9,8 @@ module.exports = {
 
 function find() {
   return db('tasks')
+    .join('projects', 'tasks.projectId', '=', 'projects.id')
+    .select('tasks.id', 'tasks.taskDesc', 'tasks.notes', 'tasks.taskStatus', 'projects.projectName', 'projects.projectDesc');
 }
 
 function findById(id) {

@@ -35,7 +35,7 @@ exports.up = function(knex) {
 };
 
 exports.down = function(knex) {
-  return knew.schema
+  return knex.schema
     .dropTableIfExists('projects')
     .dropTableIfExists('tasks')
     .dropTableIfExists('resources');
